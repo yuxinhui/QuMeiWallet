@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="adjustPan"
+    android:background="#fff">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:background="@color/blue"
+        app:layout_heightPercent="8%">
+
+        <ImageView
+            android:id="@+id/image_return"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_return"
+            app:layout_heightPercent="66%"
+            android:padding="4dp"
+            android:visibility="gone"
+            app:layout_marginLeftPercent="2%"
+            app:layout_marginTopPercent="17%"
+            app:layout_widthPercent="12%"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="消息中心"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            app:layout_heightPercent="100%"/>
+
+        <ImageView
+            android:id="@+id/image_search"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_search_big"
+            app:layout_heightPercent="66%"
+            android:padding="4dp"
+            android:visibility="gone"
+            app:layout_marginRightPercent="2%"
+            app:layout_marginTopPercent="17%"/>
+    </android.support.percent.PercentRelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/info_lv"
+        android:divider="@null"
+        android:layout_below="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,231 @@
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+
+  >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/login"
+        android:id="@+id/background"
+        android:scaleType="centerCrop"
+        />
+    <ImageView
+       android:layout_width="wrap_content"
+        app:layout_marginTopPercent="15%"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        app:layout_heightPercent="13%"
+        />
+    <!--<RelativeLayout-->
+    <!--app:layout_widthPercent="40%"-->
+    <!--app:layout_heightPercent="30%"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:id="@+id/login_progress">-->
+
+    <!--<ProgressBar-->
+    <!--style="?android:attr/progressBarStyle"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@+id/login_tips"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_margin="20dp"-->
+    <!--android:id="@+id/progressBar" />-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:id="@+id/login_tips"-->
+    <!--android:text="@string/waiting_login"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:gravity="center"/>-->
+    <!--</RelativeLayout>-->
+    <LinearLayout
+        android:id="@+id/sumlayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="35%"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle"
+        android:orientation="vertical"
+        app:layout_widthPercent="90%">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/left_phone"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="1dp"
+                android:src="@drawable/icon_phone"/>
+
+            <EditText
+                android:id="@+id/phone_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/left_phone"
+                android:background="@null"
+                android:hint="@string/p_phone_no"
+                android:textColorHint="@color/colorGray"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/line_gray"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/left_password"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="1dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icon_pwd"/>
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:maxLength="16"
+                android:layout_toRightOf="@id/left_password"
+                android:background="@null"
+                android:hint="@string/p_password"
+                android:textColorHint="@color/colorGray"
+                android:inputType="textPassword"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#666666"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@+id/sumlayout"
+        android:id="@+id/login_submit"
+        android:layout_centerHorizontal="true"
+        app:layout_widthPercent="90%"
+        app:layout_heightPercent="7%"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rectangle_blue"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:text="@string/tip_login_personal"
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/login_submit_syy"
+
+        android:layout_below="@+id/login_submit"
+        android:layout_centerHorizontal="true"
+        app:layout_widthPercent="90%"
+        app:layout_heightPercent="7%"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:background="@drawable/rectangle_blue"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:text="收银员"
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+    <RelativeLayout
+        android:layout_below="@+id/login_submit_syy"
+        android:layout_centerHorizontal="true"
+        app:layout_widthPercent="90%"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/layout_rember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/is_remember"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/tip_remember"
+                android:src="@drawable/icon_no"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@id/is_remember"
+                android:text="@string/tip_remember"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/is_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tip_forget"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/button_register"
+        app:layout_widthPercent="37.5%"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:text="用户注册"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:background="@drawable/rectangle_frame"
+        android:textColor="@color/colorWhite"
+        app:layout_heightPercent="6%"
+        app:layout_marginBottomPercent="8%"/>
+
+
+</android.support.percent.PercentRelativeLayout>

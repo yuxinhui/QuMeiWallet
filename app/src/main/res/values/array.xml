@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+    <string-array name="pay_type">
+        <item>不限</item>
+        <item>微信</item>
+        <item>支付宝</item>
+        <item>快捷支付</item>
+        <item>QQ钱包</item>
+        <item>京东钱包</item>
+        <!--<item>银联钱包</item>-->
+    </string-array>
+    <string-array name="type_chaoxun">
+        <item>不限</item>
+        <item>直接</item>
+        <item>间接</item>
+    </string-array>
+    <string-array name="pay_status">
+        <item>不限</item>
+        <item>支付成功</item>
+        <item>支付中</item>
+    </string-array>
+    <string-array name="login_type">
+        <item>个人版</item>
+        <item>商家管理版</item>
+        <item>代理商</item>
+    </string-array>
+    <string-array name="profit_type">
+        <item>不限</item>
+        <item>交易分润</item>
+        <item>充值分润</item>
+    </string-array>
+    <string-array name="text2">
+        <item></item>
+        <item>邀请a人注册可免费晋升钻石</item>
+        <item>邀请a人注册可免费晋升至尊</item>
+        <item>无需邀请，直接付款a元即可获得以下权益
+        </item>
+        <item>无需邀请，直接付款a元即可获得以下权益
+        </item>
+        <item> </item>
+        <item>在线咨询客服，升级费a元
+        </item>
+    </string-array>
+    <string-array name="text">
+        <item>直接商户升级代理可获150元,升级合伙人可获1500元。\n\n间接商户升级代理可获50元\,升级合伙人可获500元。</item>
+        <item>快捷支付1000万交易可获c元利润。\nQQ钱包支付1000万交易可获d元利润。\n微信/支付宝1000万交易可获b元利润。\n\n直接商户升级代理可获150元,升级合伙人可获1500元。\n间接商户升级代理可获50元,升级合伙人可获500元。</item>
+        <item>快捷支付1000万交易可获c元利润。\nQQ钱包支付1000万交易可获d元利润。\n微信/支付宝1000万交易可获b元利润。\n\n直接商户升级代理可获150元,升级合伙人可获1500元。\n间接商户升级代理可获50元,升级合伙人可获500元。</item>
+        <item>快捷支付1000万交易可获c元利润。\nQQ钱包支付1000万交易可获d元利润。\n微信/支付宝1000万交易可获b元利润。\n\n直接商户升级代理可获150元,升级合伙人可获1500元。\n间接商户升级代理可获50元,升级合伙人可获500元。
+        </item>
+        <item>快捷支付1000万交易可获c元利润。\nQQ钱包支付1000万交易可获d元利润。\n微信/支付宝1000万交易可获b元利润。\n\n直接商户升级代理可获150元，升级合伙人可获1500元。\n间接商户升级代理可获50元，升级合伙人可获500元。\n\n若旗下直接商户升级为合伙人级别，将赚取旗下同级合伙人拓展的直接商户总交易的0.01利润，同级除外。
+        </item>
+        <item> </item>
+        <item>微信/支付宝1000万交易可获b元利润。\n快捷支付1000万交易可获c元利润。\nQQ钱包支付1000万交易可获d元利润。\n\n直接商户升级代理可获150元，升级合伙人可获1500元。\n间接商户升级代理可获50元，升级合伙人可获500元。\n\n直接商户升级为股东级别，将赚取旗下同级股东拓展的直接商户总交易的0.01利润，同级除外。\n\n直接与间接商户，晋升为代理或合伙人，将获得升级费10%补贴。
+        </item>
+    </string-array>
+    <string-array name="name">
+        <item>普通会员</item>
+        <item>钻石</item>
+        <item>至尊</item>
+        <item>代理</item>
+        <item>合伙人</item>
+        <item>股东</item>
+        <!--<item>快捷支付</item>-->
+    </string-array>
+
+        <!--<item>快捷支付</item>-->
+    <string-array name="tab_layout">
+        <item>全部</item>
+        <item>审核通过</item>
+        <item>审核中</item>
+        <item>审核失败</item>
+        <!--<item>优质商户</item>-->
+        <!--<item>睡眠商户</item>-->
+
+    </string-array>
+    <string-array name="tab_card">
+        <item>信用卡管理</item>
+        <item>储蓄卡管理</item>
+        <!--<item>优质商户</item>-->
+        <!--<item>睡眠商户</item>-->
+
+    </string-array>
+    <string-array name="options">
+        <!--<item>快捷支付</item>-->
+        <item>微信支付</item>
+        <item>支付宝</item>
+    </string-array>
+    <string-array name="lianxi_type">
+        <item>拨打客服电话</item>
+        <item>联系QQ客服</item>
+
+    </string-array>
+    <string-array name="search_merchant_type">
+        <item>全部商户</item>
+        <item>直接商户</item>
+        <item>间接商户</item>
+    </string-array>
+    <string-array name="photo">
+        <item>拍照</item>
+        <item>选择相册</item>
+
+    </string-array>
+    <string-array name="bankcode">
+        <item>01020000</item>
+        <item>01030000</item>
+        <item>01050000</item>
+        <item>03010000</item>
+        <item>03080000</item>
+        <item>63030000</item>
+        <item>63040000</item>
+        <item>03100000</item>
+        <item>03050000</item>
+        <item>03060000</item>
+        <item>06100000</item>
+        <item>01040000</item>
+    </string-array>
+    <string-array name="bankname">
+        <item>工商银行</item>
+        <item>农业银行</item>
+        <item>建设银行</item>
+        <item>交通银行</item>
+        <item>招商银行</item>
+        <item>光大银行</item>
+        <item>华夏银行</item>
+        <item>浦发银行</item>
+        <item>民生银行</item>
+        <item>广发银行</item>
+        <item>平安银行</item>
+        <item>中国银行</item>
+    </string-array>
+</resources>

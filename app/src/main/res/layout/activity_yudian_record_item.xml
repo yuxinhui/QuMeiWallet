@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_centerInParent="true"
+    android:layout_height="52dp">
+
+
+    <TextView
+        android:id="@+id/text_yudian_fen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:text="600分"
+        />
+    <TextView
+        android:id="@+id/text_yudian_record_updatetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#999999"
+        android:textSize="10sp"
+        android:text="更新时间：2017-6-24"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="1dp"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/fen_gray"/>
+</RelativeLayout>

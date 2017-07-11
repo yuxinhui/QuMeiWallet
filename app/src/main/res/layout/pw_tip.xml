@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+   android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@drawable/rectangle"
+    >
+    <TextView
+        app:layout_marginTopPercent="2%"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/tip_title"
+        style="@style/text_block_center"
+        android:textSize="22sp"
+        app:layout_heightPercent="13%"
+        app:layout_widthPercent="100%"
+        android:text="@string/pw_id_z"
+       />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/tip_photo"
+        android:layout_gravity="center"
+        app:layout_heightPercent="60%"
+        app:layout_widthPercent="90%"
+        android:scaleType="centerInside"
+        android:src="@drawable/tip_z" />
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rectangle_blue"
+        android:text="我知道了"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        app:layout_heightPercent="14%"
+        app:layout_marginTopPercent="1%"
+        app:layout_widthPercent="90%"
+        android:layout_below="@+id/tip_photo"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp"/>
+</android.support.percent.PercentLinearLayout>

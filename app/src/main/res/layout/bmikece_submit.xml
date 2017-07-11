@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="100dp"
+    android:background="@drawable/rectangle"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:id="@+id/layout_body"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="提现金额:"
+            android:gravity="center"
+            android:textSize="18sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/edit_money"
+            android:layout_height="match_parent"
+            android:hint="请输入提现金额"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical|right"
+            android:textColorHint="@color/colorGray"
+
+            />
+    </LinearLayout>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_marginLeft="15dp"
+       android:layout_marginRight="15dp"
+       android:id="@+id/tip"
+       android:layout_below="@+id/layout_body"
+       android:text="温馨提示：提现金额最低为10元,2小时内到账。"
+       android:textSize="12sp"
+       android:gravity="center"
+       android:layout_marginBottom="5dp"
+       android:layout_height="40dp" />
+
+</RelativeLayout>

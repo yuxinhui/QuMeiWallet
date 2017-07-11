@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                               xmlns:app="http://schemas.android.com/apk/res-auto"
+                                               xmlns:tools="http://schemas.android.com/tools"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               android:background="@color/colorWhite">
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/blue"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="100%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/left_return"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:layout_alignParentLeft="true"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="30%">
+
+            <ImageView
+                android:id="@+id/image_return"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icon_return"
+                app:layout_heightPercent="46%"
+                app:layout_marginLeftPercent="5%"
+                app:layout_marginTopPercent="26%"
+                app:layout_widthPercent="28%"/>
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_mine"
+            android:textColor="#ffffff"
+            android:textSize="22sp"/>
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="14dp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_setting"/>
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_main_user"
+        android:layout_below="@id/layout_top"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="20%"
+        android:background="@color/colorWhite"
+        app:layout_marginTopPercent="0.2%"
+        >
+
+        <com.gdyd.qmwallet.myview.XCRoundRectImageView
+            android:id="@+id/my_portrait"
+            android:src="@drawable/icon_tourist"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginTopPercent="20%"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerInside"
+            />
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="13dp"
+            android:id="@+id/GO_grzx"
+            android:visibility="gone"
+            android:src="@drawable/icon_myright"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/my_name"
+            app:layout_marginTopPercent="28%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/my_portrait"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:maxLength="8"
+            android:contentDescription="@string/tip_login_type"
+            android:text="游客"
+            android:ellipsize="end"
+            app:layout_marginLeftPercent="2%"
+
+            />
+        <TextView
+            android:id="@+id/my_name_type"
+            app:layout_marginTopPercent="28%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/my_name"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:layout_toLeftOf="@+id/GO_grzx"
+            android:contentDescription="@string/tip_login_type"
+            android:text=""
+            app:layout_marginLeftPercent="2%"
+
+            />
+
+        <TextView
+            android:id="@+id/login_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@id/my_portrait"
+            android:text="@string/tip_login_type"
+            android:gravity="center"
+            android:textColor="@color/colorGray"
+            android:textSize="15sp"
+            app:layout_marginLeftPercent="2%"
+            app:layout_marginTopPercent="1%"
+          android:layout_below="@+id/my_name"
+
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:layout_below="@id/layout_main_user"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="72%"
+        android:id="@+id/pull_to_refresh_scr"
+        android:background="@color/line_gray"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:id="@+id/layout_main_tjr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:background="@color/colorWhite"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/img_tjr"
+                    style="@style/mypage_img_left_style"
+                    android:src="@drawable/icon_person"/>
+
+
+                <TextView
+                    android:id="@+id/text_tjr"
+
+                    style="@style/mypage_text_style"
+                    android:layout_toRightOf="@id/img_tjr"
+                    android:text="@string/tjr"/>
+                <ImageView
+                    style="@style/mypage_img_right_style"
+                    android:id="@+id/img5"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    style="@style/mypage_text_style"
+                    android:layout_toLeftOf="@id/img5"
+                    android:id="@+id/text_tjr_info"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_direct_shareholder"
+                android:layout_below="@+id/layout_main_tjr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:background="@color/colorWhite"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/img_shareholder"
+                    style="@style/mypage_img_left_style"
+                    android:src="@drawable/icon_person"/>
+
+
+                <TextView
+                    android:id="@+id/text_shareholder"
+
+                    style="@style/mypage_text_style"
+                    android:layout_toRightOf="@id/img_shareholder"
+                    android:text="直属股东"/>
+                <ImageView
+                    style="@style/mypage_img_right_style"
+                    android:id="@+id/img5x"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    style="@style/mypage_text_style"
+                    android:layout_toLeftOf="@id/img5x"
+                    android:id="@+id/text_shareholder_info"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_main_approve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_direct_shareholder"
+                android:background="@color/colorWhite"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+                <ImageView
+                    android:id="@+id/img_approve"
+                    style="@style/mypage_img_left_style"
+                    android:src="@drawable/icon_approve"
+                    />
+                <TextView
+                    style="@style/mypage_text_style"
+                    android:id="@+id/sh"
+                    android:layout_toRightOf="@id/img_approve"
+                    android:text="@string/tip_my_approve"/>
+                <ImageView
+                    android:id="@+id/tip_img"
+                    style="@style/mypage_img_right_style"
+                    />
+                <TextView
+                    style="@style/mypage_text_style"
+                    android:layout_toLeftOf="@id/tip_img"
+                    android:id="@+id/sh_state"
+                   />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_main_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_main_approve"
+                android:background="@color/colorWhite"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/img_pwd"
+                    style="@style/mypage_img_left_style"
+                    android:src="@drawable/icon_alter"/>
+
+                <TextView
+                    style="@style/mypage_text_style"
+                    android:layout_toRightOf="@id/img_pwd"
+                    android:text="@string/tip_alter_psw"/>
+
+                <ImageView
+                    style="@style/mypage_img_right_style"
+                   />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_main_rate"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_main_pwd"
+                android:background="@color/colorWhite"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/img_rate"
+                    style="@style/mypage_img_left_style"
+                    android:contentDescription="@string/tip_my_help"
+                    android:src="@drawable/icon_rate"/>
+
+                <TextView
+                    style="@style/mypage_text_style"
+                    android:layout_toRightOf="@id/img_rate"
+                    android:text="交易费率"/>
+
+                <ImageView
+                    style="@style/mypage_img_right_style"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_main_help2"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_main_rate"
+                android:background="@color/colorWhite"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/img_help2"
+                    style="@style/mypage_img_left_style"
+                    android:contentDescription="@string/tip_my_help"
+                    android:src="@drawable/icon_card_managet"/>
+
+                <TextView
+                    style="@style/mypage_text_style"
+                    android:layout_toRightOf="@id/img_help2"
+                    android:text="@string/tip_my_card"/>
+
+                <ImageView
+                    style="@style/mypage_img_right_style"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_main_help"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_main_help2"
+                android:background="@color/colorWhite"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/img_help"
+                    style="@style/mypage_img_left_style"
+                    android:contentDescription="@string/tip_my_help"
+                    android:src="@drawable/icon_help"/>
+
+                <TextView
+                    style="@style/mypage_text_style"
+                    android:layout_toRightOf="@id/img_help"
+                    android:text="@string/tip_my_help"/>
+
+                <ImageView
+                    style="@style/mypage_img_right_style"
+                   />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_main_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_below="@+id/layout_main_help"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:id="@+id/img_service"
+                    style="@style/mypage_img_left_style"
+                    android:src="@drawable/icon_phone_red"/>
+
+                <TextView
+                    android:id="@+id/text_service"
+                    style="@style/mypage_text_style"
+                    android:layout_toRightOf="@id/img_service"
+                    android:text="@string/tip_my_service"/>
+
+                <TextView
+                    style="@style/mypage_text_style"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/tip_my_service_tel"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_main_yy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_main_service"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorWhite"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/img_yy"
+                    style="@style/mypage_img_left_style"
+                    android:src="@drawable/yy"/>
+
+                <TextView
+                    style="@style/mypage_text_style"
+                    android:layout_toRightOf="@id/img_yy"
+                    android:text="语音通知"/>
+                <ToggleButton
+                    android:id="@+id/mTogBtn"
+                    android:layout_width="64dp"
+                    android:layout_height="48dp"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/switch_btn"
+                    android:checked="false"
+                    android:text=""
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_main_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_main_yy"
+
+                android:background="@color/colorWhite"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/img_about"
+                    style="@style/mypage_img_left_style"
+
+                    android:src="@drawable/icon_about"/>
+
+                <TextView
+                    style="@style/mypage_text_style"
+                    android:layout_toRightOf="@id/img_about"
+                    android:text="@string/tip_my_about"/>
+
+                <ImageView
+                    style="@style/mypage_img_right_style"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_main_chack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_main_about"
+                android:background="@color/colorWhite"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/img_chack"
+                    style="@style/mypage_img_left_style"
+                    android:src="@drawable/icon_check"/>
+
+                <TextView
+                    style="@style/mypage_text_style"
+                    android:layout_toRightOf="@id/img_chack"
+                    android:text="@string/tip_my_chack"/>
+
+                <ImageView
+                    style="@style/mypage_img_right_style"
+                    android:visibility="gone"
+                    android:contentDescription="@string/tip_my_chack"/>
+                <TextView
+                    style="@style/mypage_text_style"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/app_version"
+                    android:layout_marginRight="20dp"
+                    android:text=""/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/login_exit"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_main_chack"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle_blue"
+                android:paddingBottom="12dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="12dp"
+                android:text="@string/tip_my_quit"
+                android:textColor="@color/white"/>
+            <!-- 边框线 -->
+            <View
+                style="@style/mypage_line_style"
+                android:layout_below="@id/layout_main_tjr"/>
+            <View
+                style="@style/mypage_line_style"
+                android:layout_below="@id/layout_main_approve"/>
+            <View
+                style="@style/mypage_line_style"
+                android:layout_below="@id/layout_main_help"/>
+            <View
+                style="@style/mypage_line_style"
+                android:layout_below="@id/layout_main_help2"/>
+            <View
+                style="@style/mypage_line_style"
+                android:layout_below="@id/layout_main_rate"/>
+            <View
+                style="@style/mypage_line_style"
+                android:layout_below="@id/layout_main_yy"/>
+            <View
+                style="@style/mypage_line_style"
+                android:layout_below="@id/layout_main_about"/>
+
+
+        </RelativeLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</android.support.percent.PercentRelativeLayout>

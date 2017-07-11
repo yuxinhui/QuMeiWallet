@@ -1,0 +1,527 @@
+<android.support.percent.PercentRelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0">
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_xuanyao_root"
+        android:background="#F0F0F0">
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_top1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/blue"
+            app:layout_heightPercent="8%"
+            app:layout_widthPercent="100%">
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/left_return1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="30%">
+
+                <ImageView
+                    android:id="@+id/image_return1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentLeft="true"
+                    android:visibility="invisible"
+                    android:src="@drawable/icon_return"
+                    app:layout_heightPercent="46%"
+                    app:layout_marginLeftPercent="5%"
+                    app:layout_marginTopPercent="26%"
+                    app:layout_widthPercent="28%"/>
+
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="炫耀一下"
+                android:textColor="#ffffff"
+                android:textSize="22sp"/>
+            />
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_credit_circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/layout_top1"
+            android:background="@color/blue"
+            app:layout_heightPercent="30%"
+            app:layout_widthPercent="100%">
+
+            <com.gdyd.qmwallet.home.view.RainCreditCircle
+                android:id="@+id/view_crdit_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="76dp"
+                android:layout_marginRight="76dp"
+                />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_qrcode_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_credit_circle"
+            android:background="@color/colorWhite"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:baselineAligned="true"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="扫描二维码注册，一起享有雨点信用"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:gravity="center_horizontal"
+                    />
+                <ImageView
+                    android:id="@+id/yudian_xuanyao_qrcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/sharp_yudian_qrcode_register"
+                    android:shadowColor ="#ca2b75"
+                    android:shadowDx ="1"
+                    android:shadowDy ="1"
+                    android:shadowRadius="1"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="40dp"
+                    android:paddingRight="40dp"
+                    android:paddingLeft="40dp"
+                    android:paddingBottom="40dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="俏美钱包"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    />
+
+            </LinearLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F0F0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_top"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/blue"
+            app:layout_heightPercent="8%"
+            app:layout_widthPercent="100%">
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/left_return"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="30%">
+
+                <ImageView
+                    android:id="@+id/image_return"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/icon_return"
+                    app:layout_heightPercent="46%"
+                    app:layout_marginLeftPercent="5%"
+                    app:layout_marginTopPercent="26%"
+                    app:layout_widthPercent="28%"/>
+
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="信用记录"
+                android:textColor="#ffffff"
+                android:textSize="22sp"/>
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_yudian_record_header"
+            android:layout_below="@+id/layout_top"
+            android:layout_width="0dp"
+            android:layout_height="225dp"
+            app:layout_widthPercent="100%" >
+
+            <ImageView
+                android:id="@+id/img_yudian_record_header"
+                android:src="@drawable/yudian_record_header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:id="@+id/text_total_num_title"
+                android:text="我共累计了"
+                android:textSize="20sp"
+                android:textColor="#333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:layout_marginTopPercent="21%"
+                />
+
+            <TextView
+                android:id="@+id/text_total_count"
+                android:layout_below="@+id/text_total_num_title"
+                android:text="30次加分"
+                android:textSize="24sp"
+                android:textColor="#00c696"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:layout_marginTopPercent="5%"
+                />
+            <Button
+                android:id="@+id/text_xuanyao_share"
+                android:text="炫耀一下"
+                android:textSize="16sp"
+                android:background="@drawable/share_yudian_shaifen"
+                android:textColor="@color/colorWhite"
+                android:layout_width="104dp"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:layout_marginBottomPercent="15%"
+                />
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_yudian_record_level"
+            android:layout_below="@+id/layout_yudian_record_header"
+            android:background="@color/colorWhite"
+            android:layout_width="0dp"
+            android:layout_height="145dp"
+            app:layout_widthPercent="100%" >
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/layout_yudian_record_level_title"
+                android:background="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                app:layout_widthPercent="100%"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/text_yudian_record_level_title"
+                    android:layout_width="wrap_content"
+                    android:text="我的信用等级"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_height="22dp"
+                    android:layout_centerInParent="true"/>
+
+                <View
+                    android:id="@+id/line_yudian_credit_left"
+                    android:layout_width="50dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="1dp"
+                    android:layout_toLeftOf="@+id/text_yudian_record_level_title"
+                    android:background="@color/line_gray" />
+                <View
+                    android:id="@+id/line_yudian_credit_right"
+                    android:layout_width="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="1dp"
+                    android:layout_toRightOf="@+id/text_yudian_record_level_title"
+                    android:background="@color/line_gray" />
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:background="@color/colorWhite"
+                android:id="@+id/pl_record_score"
+                android:layout_below="@+id/layout_yudian_record_level_title"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                app:layout_widthPercent="100%"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+
+
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/pl_red"
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    app:layout_widthPercent="20%"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/icon_yd_red"
+                    >
+                </android.support.percent.PercentRelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="10sp"
+                    android:text="0"
+                    android:layout_marginBottom="5dp"
+                    android:layout_above="@+id/pl_red"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_tip"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="8sp"
+                    android:text="10"
+                    android:gravity="center"
+                    android:background="@mipmap/icon_tip_red"
+                    android:layout_marginBottom="2dp"
+                    android:layout_above="@+id/pl_red"
+                    />
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/pl_yellow"
+                    android:layout_toRightOf="@id/pl_red"
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    app:layout_widthPercent="20%"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/icon_yd_yellow"
+                    >
+                </android.support.percent.PercentRelativeLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/tv_yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="10sp"
+                    android:text="200"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="5dp"
+                    android:layout_above="@+id/pl_yellow"
+                    android:layout_alignLeft="@+id/pl_yellow"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_yellow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="10sp"
+                    android:text="200"
+                    android:layout_alignRight="@+id/tv_yellow"
+                    android:layout_marginBottom="5dp"
+                    android:layout_above="@+id/pl_yellow"
+                    android:layout_marginRight="10dp"
+                    />
+
+
+               <!-- <TextView
+                    android:id="@+id/tv_tip_yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:text="114"
+                    android:gravity="center"
+                    android:background="@mipmap/icon_tip_yellow"
+                    android:layout_marginBottom="2dp"
+                    android:layout_above="@+id/pl_yellow"
+                    />-->
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/pl_green"
+                    android:layout_toRightOf="@id/pl_yellow"
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    app:layout_widthPercent="20%"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/icon_yd_green"
+                    >
+                </android.support.percent.PercentRelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="10sp"
+                    android:text="400"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="5dp"
+                    android:layout_above="@+id/pl_green"
+                    android:layout_alignLeft="@+id/pl_green"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_green2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="10sp"
+                    android:text="400"
+                    android:layout_marginBottom="5dp"
+                    android:layout_above="@+id/pl_green"
+                    android:layout_alignRight="@+id/tv_green"
+                    android:layout_marginRight="10dp"
+                    />
+
+
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/pl_bg"
+                    android:layout_toRightOf="@id/pl_green"
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    app:layout_widthPercent="20%"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/icon_yd_bgcolor"
+                    >
+                </android.support.percent.PercentRelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="10sp"
+                    android:text="600"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="5dp"
+                    android:layout_above="@+id/pl_bg"
+                    android:layout_alignLeft="@+id/pl_bg"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_bg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="10sp"
+                    android:text="600"
+                    android:layout_marginBottom="5dp"
+                    android:layout_above="@+id/pl_bg"
+                    android:layout_alignRight="@+id/tv_bg"
+                    android:layout_marginRight="10dp"
+                    />
+
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/pl_blue"
+                    android:layout_toRightOf="@id/pl_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    app:layout_widthPercent="20%"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/icon_yd_blue"
+                    >
+                </android.support.percent.PercentRelativeLayout>
+
+
+                  <TextView
+                    android:id="@+id/tv_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="10sp"
+                    android:text="800"
+                      android:visibility="invisible"
+                    android:layout_marginBottom="5dp"
+                    android:layout_above="@+id/pl_blue"
+                      android:layout_alignLeft="@+id/pl_blue"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_blue2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="10sp"
+                    android:text="800"
+                    android:layout_marginBottom="5dp"
+                    android:layout_above="@+id/pl_blue"
+                    android:layout_alignRight="@+id/tv_blue"
+                    android:layout_marginRight="10dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_blue3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="10sp"
+                    android:text="1000"
+                    android:layout_marginBottom="5dp"
+                    android:layout_above="@+id/pl_blue"
+                    android:layout_alignRight="@+id/pl_blue"
+                    />
+
+
+
+
+            </android.support.percent.PercentRelativeLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <!--<android.support.percent.PercentRelativeLayout-->
+        <!--android:id="@+id/layout_yudian_record_fen_detail"-->
+        <!--android:layout_below="@+id/layout_yudian_record_level"-->
+        <!--android:background="@color/colorWhite"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp">-->
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:layout_below="@+id/layout_yudian_record_level"
+            android:background="@color/colorWhite"
+            android:id="@+id/listView"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </android.support.percent.PercentRelativeLayout>
+</android.support.percent.PercentRelativeLayout>

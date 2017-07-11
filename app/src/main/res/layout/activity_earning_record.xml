@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/blue"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="100%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/left_return"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="30%">
+
+            <ImageView
+                android:id="@+id/image_return"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icon_return"
+                app:layout_heightPercent="46%"
+                app:layout_marginLeftPercent="5%"
+                app:layout_marginTopPercent="26%"
+                app:layout_widthPercent="28%"/>
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_record"
+            android:textColor="#ffffff"
+            android:textSize="22sp"/>
+    </android.support.percent.PercentRelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_below="@+id/layout_top"
+        android:layout_marginTop="10dp"
+        android:id="@+id/listView"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></com.handmark.pulltorefresh.library.PullToRefreshListView>
+</android.support.percent.PercentRelativeLayout>

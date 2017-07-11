@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:background="@color/blue"
+
+        app:layout_heightPercent="8%">
+
+        <ImageView
+            android:id="@+id/image_return"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_return"
+            app:layout_heightPercent="66%"
+            android:padding="4dp"
+            app:layout_marginLeftPercent="2%"
+            app:layout_marginTopPercent="17%"
+            app:layout_widthPercent="12%"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="@string/title_share"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            app:layout_heightPercent="100%"/>
+
+        <ImageView
+            android:id="@+id/image_search"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_search_big"
+            app:layout_heightPercent="66%"
+            android:padding="4dp"
+            android:visibility="gone"
+            app:layout_marginRightPercent="2%"
+            app:layout_marginTopPercent="17%"/>
+    </android.support.percent.PercentRelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/share1"
+        android:id="@+id/share_zu"
+        android:background="@drawable/rectangle"
+        android:padding="10dp"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/share2"
+        android:padding="10dp"
+        android:visibility="visible"
+        android:background="@drawable/rectangle"
+        android:id="@+id/friends"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/share3"
+        android:id="@+id/zc_mdm"
+        android:background="@drawable/rectangle"
+        android:padding="10dp"
+        android:layout_weight="1"/>
+</LinearLayout>
+</android.support.percent.PercentLinearLayout>

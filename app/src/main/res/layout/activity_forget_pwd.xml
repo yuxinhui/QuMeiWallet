@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/blue"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="100%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/left_return"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="30%">
+
+            <ImageView
+                android:id="@+id/image_return"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icon_return"
+                app:layout_heightPercent="46%"
+                app:layout_marginLeftPercent="5%"
+                app:layout_marginTopPercent="26%"
+                app:layout_widthPercent="28%"/>
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_fPsw"
+            android:textColor="#ffffff"
+            android:textSize="22sp"/>
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_body"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/layout_top"
+        android:background="#FFFFFF"
+        app:layout_heightPercent="40%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="100%">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:background="#666666"/>
+        <!-- 手机号 -->
+
+        <ImageView
+            android:id="@+id/image_phone"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+
+            android:src="@drawable/icon_phone"
+            android:padding="6dp"
+            app:layout_heightPercent="15%"
+            app:layout_marginBottomPercent="2%"
+            app:layout_marginTopPercent="8%"
+            app:layout_widthPercent="15%">
+        </ImageView>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image_phone"
+            app:layout_heightPercent="20%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginTopPercent="5%">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/phone_no"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="40%"/>
+
+            <EditText
+                android:id="@+id/write_phone_no"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="@string/p_phone_no"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textSize="14sp"
+
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="60%"/>
+        </android.support.percent.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/layout_phone"
+            android:layout_toRightOf="@id/image_phone"
+            android:background="#666666"/>
+        <!-- 设置密码 -->
+
+        <ImageView
+            android:id="@+id/image_setpsw"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="6dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/image_phone"
+            android:src="@drawable/icon_pwd"
+            app:layout_heightPercent="13%"
+            app:layout_marginBottomPercent="2%"
+            app:layout_marginLeftPercent="4%"
+            app:layout_marginRightPercent="3%"
+            app:layout_marginTopPercent="10%"
+            app:layout_widthPercent="8%">
+        </ImageView>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_phone"
+            android:layout_toRightOf="@id/image_setpsw"
+            app:layout_heightPercent="20%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginTopPercent="5%">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/ssdk_instapaper_pwd"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="40%"/>
+
+            <EditText
+                android:id="@+id/write_psw"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="@string/tip_write_psw"
+                android:maxLength="16"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:inputType="textPassword"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="60%"/>
+        </android.support.percent.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/layout_psw"
+            android:layout_toRightOf="@id/image_setpsw"
+            android:background="#666666"/>
+
+        <!-- 重复密码 -->
+
+        <ImageView
+            android:id="@+id/image_setpsw_two"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="6dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/image_setpsw"
+            android:src="@drawable/icon_pwd"
+            app:layout_heightPercent="13%"
+            app:layout_marginBottomPercent="2%"
+            app:layout_marginLeftPercent="4%"
+            app:layout_marginRightPercent="3%"
+            app:layout_marginTopPercent="10%"
+            app:layout_widthPercent="8%">
+        </ImageView>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_psw_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_psw"
+            android:layout_toRightOf="@id/image_setpsw_two"
+            app:layout_heightPercent="20%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginTopPercent="5%">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/tip_reset_psw"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="40%"/>
+
+            <EditText
+                android:id="@+id/write_psw_two"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="@string/tip_write_two_psw"
+                android:maxLength="16"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:inputType="textPassword"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="60%"/>
+        </android.support.percent.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/layout_psw_two"
+            android:layout_toRightOf="@id/image_setpsw_two"
+            android:background="#666666"/>
+        <ImageView
+            android:id="@+id/image_send"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/image_setpsw_two"
+            android:src="@drawable/icon_send"
+            app:layout_heightPercent="13%"
+            app:layout_marginBottomPercent="2%"
+            app:layout_marginLeftPercent="4%"
+            app:layout_marginRightPercent="3%"
+            app:layout_marginTopPercent="6%"
+            app:layout_widthPercent="8%">
+        </ImageView>
+        <EditText
+            android:id="@+id/write_code"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/image_setpsw_two"
+            android:layout_toRightOf="@id/image_setpsw_two"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/tip_verification_code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textSize="14sp"
+            app:layout_heightPercent="20%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginTopPercent="3%"
+            app:layout_widthPercent="40%"/>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/layout_psw_two"
+            android:background="@drawable/rectangle_blue"
+            android:text="@string/send_verification_code"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            app:layout_heightPercent="18%"
+            app:layout_marginRightPercent="3%"
+            app:layout_marginTopPercent="5%"
+            app:layout_widthPercent="35%"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:id="@+id/tip_line_d"
+            android:layout_toRightOf="@id/image_setpsw_two"
+            android:layout_alignParentBottom="true"
+            android:background="#666666"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:id="@+id/tip_line_c"
+            android:layout_alignParentBottom="true"
+            android:background="#666666"/>
+    </android.support.percent.PercentRelativeLayout>
+<android.support.percent.PercentRelativeLayout
+    android:id="@+id/layout_body2"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:visibility="gone"
+    android:layout_below="@id/layout_body"
+    android:background="#FFFFFF"
+    app:layout_heightPercent="10%"
+    app:layout_widthPercent="100%"
+    >
+    <ImageView
+        android:id="@+id/image_tjrphone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/icon_phone"
+        android:padding="6dp"
+        app:layout_heightPercent="60%"
+        app:layout_marginBottomPercent="8%"
+        app:layout_marginTopPercent="30%"
+        app:layout_widthPercent="15%">
+    </ImageView>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_tjrphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image_tjrphone"
+        app:layout_heightPercent="100%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginTopPercent="20%">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:text="推荐人手机"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="40%"/>
+
+        <EditText
+            android:id="@+id/write_tjrphone_no"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+            android:hint="请输入推荐人手机"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textSize="14sp"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="60%"/>
+
+    </android.support.percent.PercentRelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#666666"/>
+</android.support.percent.PercentRelativeLayout>
+    <TextView
+        android:id="@+id/layout_service"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/layout_body2"
+        android:gravity="center"
+        android:text="@string/tip_service"
+        android:textColor="@color/colorGray"
+        android:textSize="12sp"
+        app:layout_heightPercent="8%"/>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_protocol"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/layout_body"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_heightPercent="8%">
+
+        <ImageView
+            android:id="@+id/is_agree_protocol"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/icon_yes"
+            app:layout_heightPercent="27%"
+            app:layout_marginRightPercent="1%"
+            app:layout_marginTopPercent="5%"
+            app:layout_widthPercent="6%"/>
+
+        <TextView
+            android:id="@+id/protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/is_agree_protocol"
+            android:text="@string/tip_protocol"
+            android:textColor="#000000"
+            android:textSize="12sp"/>
+    </android.support.percent.PercentRelativeLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/layout_service"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle_blue"
+        android:text="@string/tip_submit"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_heightPercent="7%"
+        app:layout_marginRightPercent="3%"
+        app:layout_marginTopPercent="2%"
+        app:layout_widthPercent="70%"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/tip_version"
+        android:textColor="#8F8F8F"
+        android:textSize="12sp"
+        app:layout_marginBottomPercent="3%"/>
+
+</android.support.percent.PercentRelativeLayout>

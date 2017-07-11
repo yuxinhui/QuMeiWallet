@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="100%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/left_return"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="30%">
+
+            <com.gdyd.qmwallet.myview.XCRoundRectImageView
+                android:id="@+id/image_return"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icon_return"
+                app:layout_heightPercent="46%"
+                app:layout_marginLeftPercent="5%"
+                app:layout_marginTopPercent="26%"
+                app:layout_widthPercent="28%"/>
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="直属股东信息"
+            android:textColor="#ffffff"
+            android:textSize="22sp"/>
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_container"
+        android:layout_below="@+id/layout_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="60%"
+        app:layout_widthPercent="80%"
+        app:layout_marginTopPercent="15%"
+        >
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_shareholder_info"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorWhite"
+            android:layout_centerHorizontal="true"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="100%"
+            >
+            <com.gdyd.qmwallet.myview.XCRoundRectImageView
+                android:id="@+id/share_holder_header"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/share_holder_header"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/phone"
+                android:textColor="#999999"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/share_holder_header"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_qr_share_holder"
+            android:layout_below="@+id/layout_shareholder_info"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorWhite"
+            android:layout_centerHorizontal="true"
+            app:layout_heightPercent="60%"
+            app:layout_widthPercent="70%">
+
+            <ImageView
+                android:id="@+id/img_Qrcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="40dp"
+                android:paddingRight="40dp"
+                android:paddingLeft="40dp"
+                android:paddingBottom="40dp"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_sharehodlerdescription"
+            android:layout_below="@+id/layout_qr_share_holder"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="可通过识别二维码来进行俏美钱包的注册"
+                android:textColor="#999999"
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+
+
+
+</android.support.percent.PercentRelativeLayout>

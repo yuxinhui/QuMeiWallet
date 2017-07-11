@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:background="@color/blue"
+        >
+
+        <ImageView
+            android:id="@+id/image_return"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_return"
+            app:layout_heightPercent="66%"
+            android:padding="4dp"
+            app:layout_marginLeftPercent="2%"
+            app:layout_marginTopPercent="17%"
+            app:layout_widthPercent="12%"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="通讯录"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            app:layout_heightPercent="100%"/>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+    <me.yokeyword.indexablerv.IndexableLayout
+        android:layout_width="match_parent"
+        android:id="@+id/indexableLayout"
+        android:layout_height="match_parent"
+        app:indexBar_layout_width="15dp"
+        app:indexBar_textColor="#3285ea"
+        app:indexBar_textSize="12sp"
+        app:indexBar_textSpace="2dp"
+        ></me.yokeyword.indexablerv.IndexableLayout>
+
+</LinearLayout>

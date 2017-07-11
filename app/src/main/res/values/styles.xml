@@ -1,0 +1,147 @@
+<resources>
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/line</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--取消ActionBar-->
+        <item name="windowActionBar">false</item>
+        <!--隐藏TitleBar-->
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="MainTab">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/colorGray</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="MainTab.Checked">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="home_head">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">20dp</item>
+
+    </style>
+
+    <style name="home_head_img">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+     <item name="android:layout_marginTop">25dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:layout_marginLeft">25dp</item>
+
+    </style>
+
+    <style name="key_btn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:background">@drawable/key_btn_receivables</item>
+    </style>
+    <style name="home_gn_tx">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">5dp</item>
+
+    </style>
+    <style name="progress_style">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_style</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">15dip</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:paddingRight">5dip</item>
+        <item name="android:maxHeight">15dip</item>
+    </style>
+    <style name="home_gn_img">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:padding">10dp</item>
+
+    </style>
+    <style name="text_block_center"
+        >
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="mypage_img_left_style">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <!--<item name="android:layout_marginTop">20dp</item>-->
+        <!--<item name="android:gravity">center_vertical</item>-->
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <style name="mypage_img_left_style2">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <!--<item name="android:layout_marginTop">20dp</item>-->
+        <!--<item name="android:gravity">center_vertical</item>-->
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <style name="mypage_img_right_style">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <!--<item name="android:layout_marginTop">20dp</item>-->
+        <!--<item name="android:layout_marginRight">20dp</item>-->
+        <item name="android:padding">15dp</item>
+        <item name="android:src">@drawable/icon_my_right</item>
+    </style>
+
+    <style name="mypage_line_style">
+        <item name="android:layout_height">0.05dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:background">@color/fen_gray</item>
+    </style>
+    <style name="mypage_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popupshow</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/popuphide</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+</resources>

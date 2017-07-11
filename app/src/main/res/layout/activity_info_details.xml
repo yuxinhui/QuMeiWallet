@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:background="@color/blue"
+        app:layout_heightPercent="8%">
+
+        <ImageView
+            android:id="@+id/image_return"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_return"
+            app:layout_heightPercent="66%"
+            android:padding="4dp"
+
+            app:layout_marginLeftPercent="2%"
+            app:layout_marginTopPercent="17%"
+            app:layout_widthPercent="12%"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="消息详情"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            app:layout_heightPercent="100%"/>
+
+        <ImageView
+            android:id="@+id/image_search"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_search_big"
+            app:layout_heightPercent="66%"
+            android:padding="4dp"
+            android:visibility="gone"
+            app:layout_marginRightPercent="2%"
+            app:layout_marginTopPercent="17%"/>
+    </android.support.percent.PercentRelativeLayout>
+   <ScrollView
+       android:layout_below="@+id/layout_top"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       >
+       <android.support.v7.widget.CardView
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:cardCornerRadius="10dp"
+           app:cardElevation="5dp"
+           android:id="@+id/mine_layout"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:background="@color/colorWhite"
+           app:cardBackgroundColor="@color/colorWhite"
+           android:gravity="center">
+           <RelativeLayout
+               android:layout_height="wrap_content"
+               android:layout_width="match_parent"
+               android:layout_marginBottom="5dp"
+               android:background="@color/colorWhite"
+               >
+               <TextView
+                   android:layout_height="36dp"
+                   android:id="@+id/titles"
+                   android:layout_width="wrap_content"
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginTop="20dp"
+                   android:textSize="18sp"
+                   android:gravity="center_horizontal"
+                   android:textColor="@color/black"
+                   android:text="titles"
+                   />
+               <TextView
+                   android:layout_margin="10dp"
+                   android:layout_marginBottom="30dp"
+                   android:layout_below="@id/titles"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/msg"
+                   android:textSize="16sp"
+                   android:text="number"
+                   android:gravity="center_vertical"
+                   android:textColor="@color/black"
+                   android:layout_width="match_parent"/>
+
+               <TextView
+                   android:layout_marginRight="20dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_below="@id/msg"
+                   android:layout_alignParentRight="true"
+                   android:layout_height="48dp"
+                   android:id="@+id/times"
+                   android:text="2016-12-12"
+                   android:textSize="14sp"
+                   android:gravity="center"
+                   android:textColor="@color/black"
+                   android:layout_width="wrap_content"/>
+
+
+           </RelativeLayout>
+
+       </android.support.v7.widget.CardView>
+   </ScrollView>
+
+</android.support.percent.PercentRelativeLayout>

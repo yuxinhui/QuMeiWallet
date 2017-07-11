@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:id="@+id/mine_layout"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:background="@color/colorWhite"
+        app:cardBackgroundColor="@color/colorWhite"
+        android:gravity="center">
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorWhite"
+            >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:id="@+id/layout_top"
+           android:layout_height="50dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:padding="8dp"
+            android:id="@+id/face"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_kj_color"/>
+<TextView
+    android:layout_marginLeft="8dp"
+    android:layout_width="match_parent"
+    android:id="@+id/title"
+    android:gravity="center_vertical"
+    android:text="123"
+    android:textSize="18sp"
+
+    android:textColor="@color/black"
+    android:layout_height="match_parent" />
+       </LinearLayout>
+            <View
+               android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/layout_top"
+                android:layout_height="1dp"
+                android:textSize="16sp"
+                android:background="@color/line_gray"
+                android:layout_width="match_parent"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+          android:id="@+id/layout_1"
+           android:orientation="horizontal"
+          android:layout_below="@+id/layout_top"
+           >
+           <TextView
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:textColor="@color/black"
+               android:textSize="13sp"
+               android:text="到账方式"
+               android:gravity="center"
+               android:layout_height="match_parent" />
+           <TextView
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:textColor="@color/black"
+               android:textSize="14sp"
+               android:text="费率"
+               android:gravity="center"
+               android:layout_height="match_parent" />
+           <TextView
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:textColor="@color/black"
+               android:textSize="14sp"
+               android:text="交易时间"
+               android:gravity="center"
+               android:layout_height="match_parent" />
+           <TextView
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:textColor="@color/black"
+               android:textSize="14sp"
+               android:text="单笔额度"
+               android:gravity="center"
+               android:layout_height="match_parent" />
+       </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_2"
+                android:orientation="vertical"
+                android:layout_below="@+id/layout_1"
+                >
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="13sp"-->
+                    <!--android:text=""-->
+                    <!--android:id="@+id/type0"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_height="match_parent" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="13sp"-->
+                    <!--android:text=""-->
+                    <!--android:id="@+id/rate0"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_height="match_parent" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="13sp"-->
+                    <!--android:text=""-->
+                    <!--android:id="@+id/js0"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_height="match_parent" />-->
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="13sp"-->
+                    <!--android:text=""-->
+                    <!--android:id="@+id/money_size0"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_height="match_parent" />-->
+            </LinearLayout>
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:id="@+id/layout_3"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_below="@+id/layout_2"-->
+                <!--&gt;-->
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="13sp"-->
+                    <!--android:text=""-->
+                    <!--android:gravity="center"-->
+                    <!--android:id="@+id/type1"-->
+                    <!--android:layout_height="match_parent" />-->
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="13sp"-->
+                    <!--android:text=""-->
+                    <!--android:id="@+id/rate1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_height="match_parent" />-->
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="13sp"-->
+                    <!--android:text=""-->
+                    <!--android:gravity="center"-->
+                    <!--android:id="@+id/js1"-->
+                    <!--android:layout_height="match_parent" />-->
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="13sp"-->
+                    <!--android:text=""-->
+                    <!--android:id="@+id/money_size1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_height="match_parent" />-->
+            <!--</LinearLayout>-->
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

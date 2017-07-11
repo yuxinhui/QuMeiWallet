@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:background="@color/blue"
+        app:layout_heightPercent="8%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/left_return"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="30%">
+
+            <ImageView
+                android:id="@+id/image_return"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icon_return"
+                app:layout_heightPercent="46%"
+                app:layout_marginLeftPercent="5%"
+                app:layout_marginTopPercent="26%"
+                app:layout_widthPercent="28%"/>
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:id="@+id/title"
+            android:text="@string/gn_news"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            app:layout_heightPercent="100%"/>
+
+        <ImageView
+            android:id="@+id/image_search"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_search_big"
+            app:layout_heightPercent="66%"
+            android:padding="5dp"
+            android:visibility="gone"
+            app:layout_marginRightPercent="2%"
+            app:layout_marginTopPercent="17%"/>
+    </android.support.percent.PercentRelativeLayout>
+   <RadioGroup
+       android:layout_below="@+id/layout_top"
+       android:layout_width="match_parent"
+       app:layout_heightPercent="7%"
+       android:id="@+id/rg"
+       android:orientation="horizontal"
+       android:background="@drawable/video_bj"
+       >
+       <RadioButton
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:button="@null"
+           android:gravity="center"
+           android:text="产品宣传"
+           android:id="@+id/xc"
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="5dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:background="@drawable/rectangle_blue"
+           android:checked="true"
+           android:textColor="@color/colorWhite"
+           android:layout_weight="1"/>
+       <RadioButton
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:button="@null"
+           android:gravity="center"
+           android:text="产品教学"
+           android:id="@+id/jx"
+           android:layout_marginTop="5dp"
+
+           android:layout_marginBottom="5dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:layout_weight="1"/>
+       <RadioButton
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:button="@null"
+           android:gravity="center"
+           android:id="@+id/js"
+           android:text="公司介绍"
+
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="5dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:layout_weight="1"/>
+   </RadioGroup>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll"
+        android:layout_below="@+id/rg"
+        ></FrameLayout>
+</android.support.percent.PercentRelativeLayout>

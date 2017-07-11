@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/blue"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="100%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/left_return"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="30%">
+
+            <ImageView
+                android:id="@+id/image_return"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icon_return"
+                app:layout_heightPercent="46%"
+                app:layout_marginLeftPercent="5%"
+                app:layout_marginTopPercent="26%"
+                app:layout_widthPercent="28%"/>
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_kj"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"/>
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:background="@drawable/scan_layout"
+        app:layout_heightPercent="65%"
+        app:layout_marginLeftPercent="10%"
+        app:layout_marginTopPercent="10%"
+        app:layout_widthPercent="80%"
+        android:id="@+id/my_code_layout"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/scan_mcht_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            app:layout_marginTopPercent="2%"
+            />
+
+        <TextView
+            android:id="@+id/scan_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scan_mcht_name"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:maxLines="1"
+            app:layout_marginTopPercent="1%"
+            />
+
+        <View
+            android:id="@+id/scan_line_dash"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/scan_money"
+            android:background="@drawable/line_dash"
+            app:layout_marginTopPercent="2%"/>
+        <TextView
+            app:layout_marginTopPercent="2%"
+            android:layout_below="@+id/scan_line_dash"
+            android:layout_width="match_parent"
+            android:text="长按二维码即可分享"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:id="@+id/tip"
+            android:textColor="@color/blue"
+            app:layout_heightPercent="8%"/>
+        <ImageView
+            android:id="@+id/scan_image"
+            android:layout_below="@+id/tip"
+            app:layout_heightPercent="55%"
+            android:layout_marginTop="5dp"
+            app:layout_marginLeftPercent="15%"
+            app:layout_widthPercent="70%"
+            android:scaleType="centerInside"
+            />
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:id="@+id/pBar"
+            android:visibility="gone"
+            android:layout_below="@id/scan_line_dash"
+            app:layout_heightPercent="30%"
+            app:layout_marginLeftPercent="30%"
+            app:layout_marginTopPercent="15%"
+            app:layout_widthPercent="40%"
+            />
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/scan_image"
+            android:gravity="center"
+            app:layout_heightPercent="8%"
+            app:layout_marginTopPercent="0.5%"
+            >
+
+            <ImageView
+                android:id="@+id/scan_tip_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:src="@drawable/s_icon_scan_orange"
+                />
+            <TextView
+                android:id="@+id/scan_tip_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/scan_tip_img"
+                android:gravity="center_vertical"
+                android:text="@string/scan_wx_tip"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+             />
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

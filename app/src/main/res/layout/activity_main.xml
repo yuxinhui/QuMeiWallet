@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11000000"
+    tools:context="com.gdyd.qmwallet.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="92%"
+        android:orientation="vertical"
+        android:layout_height="wrap_content" />
+
+    <fragment
+        android:id="@+id/layout_footer"
+        android:name="com.gdyd.qmwallet.mFooter"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        app:layout_heightPercent="8%"
+        android:layout_below="@+id/ll"
+        tools:layout="@layout/fm_main_footer"
+        android:layout_height="wrap_content" />
+
+
+</android.support.percent.PercentRelativeLayout>

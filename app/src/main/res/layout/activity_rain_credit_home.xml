@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/blue"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="100%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/left_return"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="30%">
+
+            <ImageView
+                android:id="@+id/image_return"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icon_return"
+                app:layout_heightPercent="46%"
+                app:layout_marginLeftPercent="5%"
+                app:layout_marginTopPercent="26%"
+                app:layout_widthPercent="28%"/>
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="雨点信用"
+            android:textColor="#ffffff"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/left_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="雨点规则"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"/>
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_credit_circle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/layout_top"
+        android:background="@color/blue"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="100%">
+
+        <com.gdyd.qmwallet.home.view.RainCreditCircle
+            android:id="@+id/view_crdit_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="76dp"
+            android:layout_marginRight="76dp"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_credit_value"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/layout_credit_circle"
+        android:background="@color/blue"
+        app:layout_heightPercent="6%"
+        app:layout_widthPercent="100%">
+
+        <View
+            android:id="@+id/lineCircle"
+            android:background="@color/colorWhite"
+            android:layout_height="0.5dp"
+            android:layout_width="match_parent"
+            />
+        <TextView
+            android:text="授信额度"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/text_credit_value"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_credit_header"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/layout_credit_value"
+        android:background="@color/colorWhite"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="100%" >
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/credit_lift_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:textSize="16sp"
+            android:text="信用生活"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_credit_bottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/layout_credit_header"
+        android:background="@color/colorPrimary"
+        app:layout_heightPercent="49%"
+        app:layout_widthPercent="100%"
+        >
+
+
+      <ImageView
+          android:id="@+id/img_shaishaifen"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:src="@drawable/credit_shaishaifen"
+          android:scaleType="centerCrop"
+          app:layout_heightPercent="48%"
+          app:layout_widthPercent="100%"/>
+
+        <View
+            android:id="@+id/crdit_card_space"
+            android:background="@color/colorWhite"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_below="@+id/img_shaishaifen"
+            app:layout_heightPercent="4%"
+            app:layout_widthPercent="100%"/>
+
+        <ImageView
+            android:id="@+id/img_creditjilu"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@+id/crdit_card_space"
+            android:src="@drawable/credit_lilu"
+            app:layout_heightPercent="49%"
+            app:layout_widthPercent="100%"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

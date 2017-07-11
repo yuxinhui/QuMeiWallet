@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/blue"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="100%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/left_return"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="30%">
+
+            <ImageView
+                android:id="@+id/image_return"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:onClick="image_return"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icon_return"
+                app:layout_heightPercent="46%"
+                app:layout_marginLeftPercent="5%"
+                app:layout_marginTopPercent="26%"
+                app:layout_widthPercent="28%"/>
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_userInfo"
+            android:textColor="#ffffff"
+            android:textSize="22sp"/>
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_body"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/layout_top"
+        android:background="#FFFFFF"
+        app:layout_heightPercent="24%"
+        app:layout_marginTopPercent="3%"
+        app:layout_widthPercent="100%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_sk_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image_phone"
+            app:layout_heightPercent="33%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/sk_name"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="30%"/>
+
+            <EditText
+                android:id="@+id/write_sk_name"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="@string/tip_sk_name"
+                android:singleLine="true"
+              android:inputType="text"
+                android:textSize="14sp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="70%"
+                android:maxLength="14"
+                android:layout_alignParentRight="true"
+                />
+        </android.support.percent.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/layout_sk_name"
+            android:layout_toRightOf="@id/image_phone"
+            android:background="@color/fen_gray"/>
+        <!-- 设置密码 -->
+
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_sk_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_sk_name"
+            android:layout_toRightOf="@id/image_setpsw"
+            app:layout_heightPercent="33%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+           >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/sk_id"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="30%"/>
+
+            <EditText
+                android:id="@+id/write_sk_id"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="@string/tip_write_sk_id"
+                android:maxLength="18"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="14sp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="70%"/>
+        </android.support.percent.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/layout_sk_id"
+            android:layout_toRightOf="@id/image_setpsw"
+            android:background="@color/fen_gray"/>
+
+        <!-- 重复密码 -->
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_sk_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_sk_id"
+            android:layout_toRightOf="@id/image_setpsw_two"
+            app:layout_heightPercent="33%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+           >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/tip_sk_site"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="30%"/>
+
+            <EditText
+                android:id="@+id/write_sk_site"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="@string/tip_write_sk_site"
+                android:singleLine="true"
+                android:inputType="text"
+                android:maxLength="50"
+                android:textSize="14sp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="70%"/>
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_body2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/layout_body"
+        android:background="#FFFFFF"
+        app:layout_heightPercent="40%"
+        app:layout_marginTopPercent="3%"
+        app:layout_widthPercent="100%">
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_bank_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image_phone"
+            app:layout_heightPercent="20%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/bank_number"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="40%"/>
+
+            <EditText
+                android:id="@+id/write_bank_number"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="@string/tip_bank_number"
+                android:inputType="number"
+                android:maxLength="19"
+                android:textSize="14sp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="60%"/>
+        </android.support.percent.PercentRelativeLayout>
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_sk_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_bank_number"
+            android:layout_toRightOf="@id/image_setpsw"
+            app:layout_heightPercent="20%"
+            android:visibility="visible"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/sk_phone"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="30%"/>
+
+            <EditText
+                android:id="@+id/write_sk_phone"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="@string/tip_write_sk_phone"
+                android:maxLength="11"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="14sp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="70%"/>
+        </android.support.percent.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/layout_sk_phone"
+            android:layout_toRightOf="@id/image_setpsw"
+            android:background="@color/fen_gray"/>
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_bank_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_sk_phone"
+            app:layout_heightPercent="20%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/bank_type"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="40%"/>
+
+            <TextView
+                android:id="@+id/write_bank_type"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="@string/tip_bank_type"
+                android:singleLine="true"
+                android:focusable="false"
+                android:textSize="14sp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="60%"/>
+        </android.support.percent.PercentRelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/layout_bank_number"
+            android:layout_toRightOf="@id/image_phone"
+            android:background="@color/fen_gray"/>
+        <!-- 设置密码 -->
+
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_bank_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_bank_type"
+            android:layout_toRightOf="@id/image_setpsw"
+            app:layout_heightPercent="20%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+           >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/bank_site"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="40%"
+                android:id="@+id/textView2" />
+
+            <TextView
+                android:focusable="false"
+                android:id="@+id/write_ssq"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="@string/tip_write_bank_site"
+                android:maxLength="16"
+                android:singleLine="true"
+                android:textSize="14sp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="60%"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView2"
+                android:layout_toEndOf="@+id/textView2" />
+        </android.support.percent.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/layout_bank_type"
+            android:layout_toRightOf="@id/image_setpsw"
+            android:background="@color/fen_gray"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/layout_bank_site"
+            android:layout_toRightOf="@id/image_setpsw_two"
+            android:background="@color/fen_gray"/>
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_bank_type2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_bank_site"
+            app:layout_heightPercent="20%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginTopPercent="5%">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/tip_bank_type2"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="40%"
+                android:id="@+id/textView4" />
+
+            <TextView
+                android:focusable="false"
+                android:id="@+id/write_psw_two"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="@string/tip_write_bank_type2"
+                android:singleLine="true"
+                android:textSize="14sp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="60%"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView4"
+                android:layout_toEndOf="@+id/textView4" />
+        </android.support.percent.PercentRelativeLayout>
+    </android.support.percent.PercentRelativeLayout>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/layout_body2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle_blue"
+        android:text="下一步"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_heightPercent="7%"
+        app:layout_marginRightPercent="3%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="90%"/>
+    <android.support.percent.PercentRelativeLayout
+        app:layout_heightPercent="18%"
+        android:layout_centerInParent="true"
+        app:layout_widthPercent="65%"
+        android:id="@+id/tip_ddsq"
+        android:visibility="gone"
+        android:background="@drawable/rectangle_black"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="信息提交中..."
+            android:textSize="20sp"
+            android:id="@+id/tv_tip"
+            app:layout_marginLeftPercent="8%"
+            android:textColor="@color/colorWhite"
+            />
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:id="@+id/pBar"
+            android:layout_toRightOf="@+id/tv_tip"
+            app:layout_heightPercent="45%"
+            app:layout_marginLeftPercent="1%"
+            android:layout_centerVertical="true"
+            app:layout_widthPercent="40%"
+            />
+    </android.support.percent.PercentRelativeLayout>
+</android.support.percent.PercentRelativeLayout>

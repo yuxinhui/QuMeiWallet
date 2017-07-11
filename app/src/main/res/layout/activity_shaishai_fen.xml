@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/blue"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="100%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/left_return"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="30%">
+
+            <ImageView
+                android:id="@+id/image_return"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icon_return"
+                app:layout_heightPercent="46%"
+                app:layout_marginLeftPercent="5%"
+                app:layout_marginTopPercent="26%"
+                app:layout_widthPercent="28%"/>
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="晒晒分"
+            android:textColor="#ffffff"
+            android:textSize="22sp"/>
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_yudianfen_bg"
+        android:layout_below="@+id/layout_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="56%"
+        app:layout_widthPercent="100%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_share_yudian_selectimage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorWhite"
+            android:layout_marginBottom="10dp"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="60%">
+
+            <View
+                android:background="@color/colorWhite"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="100%"/>
+
+          <ImageView
+              android:id="@+id/img_yudian_share_selectimage"
+              android:src="@drawable/icon_yd_big_dh"
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:scaleType="centerCrop"
+              android:layout_centerHorizontal="true"
+              app:layout_heightPercent="86%"
+              app:layout_widthPercent="100%"/>
+
+            <ImageView
+                android:id="@+id/img_yudian_circle"
+                android:src="@drawable/icon_yudian_circle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                app:layout_heightPercent="20%"
+                app:layout_widthPercent="50%"
+                app:layout_marginTopPercent="13%" />
+
+            <TextView
+                android:id="@+id/text_myyudian_title"
+                android:text="我的雨点分"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_yudian_circle"
+                android:layout_centerHorizontal="true"
+                android:textSize="10sp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="-43dp"
+                />
+            <TextView
+                android:id="@+id/text_myyudian_value"
+                android:text="500"
+                android:textSize="21sp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_myyudian_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:text="我的信用宣言"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/img_yudian_circle"
+                android:textColor="#ffffff"
+                android:layout_marginTop="21dp"
+                android:textSize="9sp"
+                />
+
+            <TextView
+                android:id="@+id/text_chengxin"
+                android:text="诚信\n大意者也"
+                android:layout_width="60dp"
+                android:layout_height="34dp"
+                android:layout_below="@+id/img_yudian_circle"
+                android:layout_marginTop="90dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:src="@drawable/icon_yudian_douhao"
+                android:layout_below="@+id/img_yudian_circle"
+                android:layout_toRightOf="@+id/text_chengxin"
+                android:layout_marginTop="92dp"
+                android:layout_width="14dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="2dp"
+                />
+            <ImageView
+                android:id="@+id/img_yudian_logo"
+                android:src="@drawable/icon_yuding_logo"
+                android:background="@drawable/yudian_logo_round"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/img_yudian_share_selectimage"
+                android:layout_marginTop="-15dp"/>
+
+            <TextView
+                android:text="打开俏美钱包app-首页-找到雨点信用晒起来"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:textSize="7sp"
+                android:textColor="#333333"
+                />
+
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_select_shareimages"
+        android:layout_below="@+id/layout_yudianfen_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        app:layout_heightPercent="46%"
+        app:layout_widthPercent="100%" >
+
+        <TextView
+            android:text="请选择您想分享的主题"
+            android:id="@+id/text_share_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            />
+
+        <View
+            android:id="@+id/line_yudian_credit"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/text_share_theme"
+            android:background="@color/line_gray" />
+
+        <GridView
+            android:id="@+id/grid_choose_pictures"
+            android:layout_below="@+id/line_yudian_credit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:numColumns="3"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="5dp"
+            app:layout_heightPercent="60%"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+
+        <Button
+            android:id="@+id/btn_share_commit"
+            android:layout_below="@+id/grid_choose_pictures"
+            android:text="晒分"
+            android:textSize="16sp"
+            android:background="@drawable/share_yudian_shaifen"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            />
+        <Button />
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+
+</android.support.percent.PercentRelativeLayout>

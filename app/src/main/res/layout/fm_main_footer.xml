@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray" >
+
+    <View
+        android:id="@+id/layout_bottom_header_line"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="2.5%"
+        android:background="@color/fen_gray"
+        android:layout_alignParentTop="true"
+        />
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_bottom_home"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="20%"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/s_img_home"
+            app:layout_heightPercent="45%"
+            app:layout_marginLeftPercent="15%"
+            app:layout_marginTopPercent="10%"
+            app:layout_widthPercent="70%"
+            android:src="@drawable/home_blue" />
+
+        <TextView
+            android:id="@+id/s_text_home"
+            style="@style/text_block_center"
+            android:layout_below="@id/s_img_home"
+            app:layout_heightPercent="45%"
+            app:layout_widthPercent="100%"
+            android:text="@string/main_home"
+            android:textColor="@color/blue" />
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_bottom_share"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/layout_bottom_home"
+        app:layout_widthPercent="20%" >
+
+        <ImageView
+            android:id="@+id/s_img_share"
+            app:layout_heightPercent="45%"
+            app:layout_marginLeftPercent="15%"
+            app:layout_marginTopPercent="10%"
+            app:layout_widthPercent="70%"
+            android:src="@drawable/share" />
+
+        <TextView
+            android:id="@+id/s_text_share"
+            style="@style/text_block_center"
+            app:layout_heightPercent="45%"
+            app:layout_widthPercent="100%"
+            android:text="@string/main_share"
+            android:textColor="@color/colorGray"
+            android:layout_below="@+id/s_img_share"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    </android.support.percent.PercentRelativeLayout>
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_bottom_talk"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/layout_bottom_share"
+        app:layout_widthPercent="20%" >
+
+        <ImageView
+            android:id="@+id/s_img_talk"
+            app:layout_heightPercent="45%"
+            app:layout_marginLeftPercent="15%"
+            app:layout_marginTopPercent="10%"
+            app:layout_widthPercent="70%"
+            android:src="@drawable/tab5" />
+
+        <TextView
+            android:id="@+id/s_text_talk"
+            style="@style/text_block_center"
+            app:layout_heightPercent="45%"
+            app:layout_widthPercent="100%"
+            android:text="会话"
+            android:textColor="@color/colorGray"
+            android:layout_below="@+id/s_img_talk"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    </android.support.percent.PercentRelativeLayout>
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_bottom_trans"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/layout_bottom_talk"
+        app:layout_widthPercent="20%" >
+
+        <ImageView
+            android:id="@+id/s_img_trans"
+            app:layout_heightPercent="45%"
+            app:layout_marginLeftPercent="15%"
+            app:layout_marginTopPercent="10%"
+            app:layout_widthPercent="70%"
+            android:src="@drawable/trans" />
+
+
+        <TextView
+            android:id="@+id/s_text_trans"
+            style="@style/text_block_center"
+            android:layout_below="@id/s_img_trans"
+            app:layout_heightPercent="45%"
+            app:layout_widthPercent="100%"
+            android:text="@string/main_trans"
+            android:textColor="@color/colorGray" />
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_bottom_mine"
+        android:layout_height="match_parent"
+      android:layout_toRightOf="@id/layout_bottom_trans"
+        app:layout_widthPercent="20%" >
+
+        <ImageView
+            android:id="@+id/s_img_mine"
+            app:layout_heightPercent="45%"
+            app:layout_marginLeftPercent="15%"
+            app:layout_marginTopPercent="10%"
+            app:layout_widthPercent="70%"
+            android:src="@drawable/mine" />
+
+        <TextView
+            android:id="@+id/s_text_mine"
+            style="@style/text_block_center"
+            android:layout_below="@id/s_img_mine"
+            app:layout_heightPercent="45%"
+            app:layout_widthPercent="100%"
+            android:text="@string/main_mine"
+            android:textColor="@color/colorGray" />
+    </android.support.percent.PercentRelativeLayout>
+
+    <TextView
+        android:id="@+id/s_img_trans_sum"
+        app:layout_heightPercent="35%"
+        app:layout_marginLeftPercent="64%"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        android:text=""
+        android:background="@drawable/rectangle_blue"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_marginTopPercent="3%"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        />
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_jysj_title"
+        android:layout_width="match_parent"
+        android:background="@color/blue"
+        app:layout_heightPercent="8%">
+
+        <ImageView
+            android:id="@+id/image_return"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_return"
+            app:layout_heightPercent="66%"
+            android:padding="4dp"
+
+
+            app:layout_marginTopPercent="17%"
+            app:layout_widthPercent="16%"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="@string/title_transdata"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            app:layout_heightPercent="100%"/>
+
+        <ImageView
+            android:id="@+id/image_search"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_search_big"
+            app:layout_heightPercent="66%"
+            android:padding="4dp"
+            app:layout_marginRightPercent="2%"
+            app:layout_marginTopPercent="17%"/>
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_jysj_center"
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout_jysj_title"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="27%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_jysj_date"
+            android:layout_width="match_parent"
+            app:layout_heightPercent="20%"
+            app:layout_marginTopPercent="15%">
+
+            <ImageView
+                android:id="@+id/transdata_ls_img"
+                android:layout_width="wrap_content"
+                android:src="@drawable/icon_date"
+                app:layout_heightPercent="80%"
+                android:visibility="gone"
+                app:layout_marginLeftPercent="20%"/>
+
+            <TextView
+                android:id="@+id/transdata_ls_tip"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/transdata_ls_img"
+                android:text="@string/transdata_ls"
+                android:textColor="#000"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_heightPercent="100%"
+                app:layout_marginLeftPercent="2%"/>
+
+            <TextView
+                android:id="@+id/transdata_ls"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_toRightOf="@id/transdata_ls_tip"
+                android:textColor="#000"
+                android:textSize="16sp"
+                app:layout_heightPercent="100%"
+                app:layout_marginLeftPercent="1%"/>
+        </android.support.percent.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/transdata_count_money"
+            android:layout_width="match_parent"
+            android:layout_below="@id/layout_jysj_date"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="36sp"
+            android:text="￥0.00"
+            app:layout_heightPercent="30%"
+            app:layout_marginTopPercent="3%"/>
+
+        <TextView
+            android:id="@+id/transdata_count_money_text"
+            android:layout_width="match_parent"
+            android:layout_below="@id/transdata_count_money"
+            android:gravity="center"
+            android:layout_alignRight="@+id/transdata_count_money"
+            android:textColor="@color/colorBlack"
+            app:layout_heightPercent="13%"
+            android:text="暂无交易"
+            app:layout_marginTopPercent="3%"/>
+    </android.support.percent.PercentRelativeLayout>
+
+    <TextView
+        android:id="@+id/layout_jysj_list_tip"
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout_jysj_center"
+        android:gravity="center_vertical"
+        android:text="@string/transdata_mx"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="6%"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_above="@+id/layout_jysj_list_tip"
+        android:background="@color/line_gray"/>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/layout_jysj_list"
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout_jysj_list_tip"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        app:layout_heightPercent="55%"/>
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="350dp"
+    android:background="@drawable/rectangle" >
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_queryorder_search_tip"
+        android:layout_width="wrap_content"
+        app:layout_heightPercent="10%"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="1%" >
+
+        <ImageView
+            android:id="@+id/tip_queryorder_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_heightPercent="90%"
+            app:layout_marginTopPercent="5%"
+            android:contentDescription="@string/tip_queryorder_search"
+            android:src="@drawable/icon_tixian" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tip_queryorder_search"
+            android:gravity="center_vertical"
+            android:text="申请提现成功"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_name"
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout_queryorder_search_tip"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginTopPercent="1%" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/line_gray" />
+
+        <TextView
+            android:id="@+id/tip_name"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            app:layout_widthPercent="30%"
+            android:gravity="center_vertical"
+            android:text="商户名称:"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+       <TextView
+           android:id="@+id/name"
+           android:layout_width="match_parent"
+           android:layout_toRightOf="@+id/tip_name"
+           android:layout_height="match_parent"
+           app:layout_marginLeftPercent="7%"
+           app:layout_marginTopPercent="12%"
+           android:gravity="right|center_vertical"
+           app:layout_widthPercent="86%"
+           android:visibility="visible"
+           android:background="@drawable/rectangle" />
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_phone"
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout_name"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginTopPercent="1%" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/line_gray" />
+
+        <TextView
+            android:id="@+id/tip_phone"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            app:layout_widthPercent="30%"
+            android:gravity="center_vertical"
+            android:text="手机号:"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/tip_phone"
+            android:layout_height="match_parent"
+            app:layout_marginLeftPercent="7%"
+            app:layout_marginTopPercent="12%"
+            android:gravity="right|center_vertical"
+            app:layout_widthPercent="86%"
+            android:visibility="visible"
+            android:background="@drawable/rectangle" />
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_tx_money"
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout_phone"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginTopPercent="1%" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/line_gray" />
+
+        <TextView
+            android:id="@+id/tip_tx_money"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            app:layout_widthPercent="30%"
+            android:gravity="center_vertical"
+            android:text="提现金额:"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tx_money"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/tip_tx_money"
+            android:layout_height="match_parent"
+            app:layout_marginLeftPercent="7%"
+            app:layout_marginTopPercent="12%"
+            app:layout_widthPercent="86%"
+            android:gravity="right|center_vertical"
+            android:visibility="visible"
+            android:background="@drawable/rectangle" />
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_tx_rate"
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout_tx_money"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginTopPercent="1%" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/line_gray" />
+
+        <TextView
+            android:id="@+id/tip_tx_rate"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            app:layout_widthPercent="30%"
+            android:gravity="center_vertical"
+            android:text="提现手续费:"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tx_rate"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/tip_tx_rate"
+            android:layout_height="match_parent"
+            app:layout_marginLeftPercent="7%"
+            app:layout_marginTopPercent="12%"
+            app:layout_widthPercent="86%"
+            android:gravity="right|center_vertical"
+            android:visibility="visible"
+            android:background="@drawable/rectangle" />
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_sj_money"
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout_tx_rate"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginTopPercent="1%" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/line_gray" />
+
+        <TextView
+            android:id="@+id/tip_sj_money"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            app:layout_widthPercent="30%"
+            android:gravity="center_vertical"
+            android:text="实际到账:"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/sj_money"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/tip_sj_money"
+            android:layout_height="match_parent"
+            app:layout_marginLeftPercent="7%"
+            app:layout_marginTopPercent="12%"
+            app:layout_widthPercent="86%"
+            android:gravity="right|center_vertical"
+            android:visibility="visible"
+            android:background="@drawable/rectangle" />
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_card"
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout_sj_money"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginTopPercent="1%" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/line_gray" />
+
+        <TextView
+            android:id="@+id/tip_card"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            app:layout_widthPercent="30%"
+            android:gravity="center_vertical"
+            android:text="到账卡号:"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/tip_card"
+            android:layout_height="match_parent"
+            app:layout_marginLeftPercent="7%"
+            app:layout_marginTopPercent="12%"
+            app:layout_widthPercent="86%"
+            android:gravity="right|center_vertical"
+            android:visibility="visible"
+            android:background="@drawable/rectangle" />
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_time"
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout_card"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginTopPercent="1%" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/line_gray" />
+
+        <TextView
+            android:id="@+id/tip_time"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            app:layout_widthPercent="30%"
+            android:gravity="center_vertical"
+            android:text="提现时间:"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/tip_time"
+            android:layout_height="match_parent"
+            app:layout_marginLeftPercent="7%"
+            app:layout_marginTopPercent="12%"
+            app:layout_widthPercent="86%"
+            android:gravity="right|center_vertical"
+
+            android:visibility="visible"
+            android:background="@drawable/rectangle" />
+    </android.support.percent.PercentRelativeLayout>
+
+
+    <TextView
+        android:id="@+id/start_search"
+        android:layout_alignParentBottom="true"
+        app:layout_marginBottomPercent="2%"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="15%"
+        app:layout_marginTopPercent="2%"
+        app:layout_widthPercent="70%"
+        android:background="@drawable/rectangle_blue"
+        android:gravity="center"
+        android:text="完 成"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</android.support.percent.PercentRelativeLayout>
